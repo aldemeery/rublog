@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+# rubocop:disable Style/NumericLiterals
 ActiveRecord::Schema.define(version: 2020_07_10_153000) do
-
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'articles', force: :cascade do |t|
+    t.string 'title'
+    t.text 'body'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
-
 end
+# rubocop:enable Style/NumericLiterals
